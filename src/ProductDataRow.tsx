@@ -25,7 +25,7 @@ export default function ProductDataRow({id, quantity, photoSrc, name, size, colo
               <img src={photoSrc} alt={name} className='w-full h-full'/>
               {(discount != 0) && <p className='invisible sm:visible text-center px-1 absolute bottom-0 right-0 bg-orange-300'><span className='text-red-600'>{`-${discount * 100}%`}</span></p>}
             </div>
-            <div className="ml-5 text-gray-800 text-xs">
+            <div className="sm: ml-5 text-gray-800 text-xs">
               <p className="mb-2 font-medium text-base">{name}</p>
               <p>
                 <span className="font-medium">Size:</span>
@@ -44,7 +44,7 @@ export default function ProductDataRow({id, quantity, photoSrc, name, size, colo
         </td>
         <td>
           <select
-            className="w-[86px] h-11 py-1 px-3 focus:border-0 focus:ring-4 focus:ring-teal-200 focus:rounded focus-visible:outline-none"
+            className="sm:w-[86px] h-11 py-1 px-3 focus:border-0 focus:ring-4 focus:ring-teal-200 focus:rounded focus-visible:outline-none"
             value={quantity}
             onChange={(e) => {
               handleQuantityChange(id, Number(e.target.value));

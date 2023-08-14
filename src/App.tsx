@@ -89,7 +89,7 @@ function App() {
       </div>
       <div className="w-full overflow-hidden flex flex-col items-center">
         {cart.length > 0 ? (
-          <table className="border-collapse border-black mx-auto w-full">
+          <table className="border-collapse border-black mx-auto w-full overflow-scroll">
             <thead>
               <tr className="border-y-2">
                 <th className="min-w-max p-4 text-left">Product Name</th>
