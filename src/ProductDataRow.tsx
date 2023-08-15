@@ -21,7 +21,7 @@ export default function ProductDataRow({id, quantity, photoSrc, name, size, colo
       <tr className="text-center border-y">
         <td>
           <div className="sm:flex items-center text-left">
-            <div className="w-0 h-0 md:shrink-0 sm:w-[110px] sm:h-[90px] ml-3 text-center relative">
+            <div className="max-sm:hidden md:shrink-0 w-[110px] h-auto ml-3 text-center relative">
               <img src={photoSrc} alt={name} className='w-full h-full'/>
               {(discount != 0) && <p className='invisible sm:visible text-center px-1 absolute bottom-0 right-0 bg-orange-300'><span className='text-red-600'>{`-${discount * 100}%`}</span></p>}
             </div>
